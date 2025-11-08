@@ -1,5 +1,5 @@
 # Ignorar archivo .env en Backend-SM
-.env
+#.env
 node_modules/
 
 # Ignorar configuraciones de editores (opcional, si las tienes)
