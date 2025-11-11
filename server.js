@@ -175,6 +175,10 @@ app.post('/api/update-profile', async (req, res) => {
     res.status(500).json({ error: 'Error al actualizar perfil' });
   }
 });
+// Ruta raíz para confirmar que el servidor está corriendo
+app.get('/', (req, res) => {
+  res.send('Servidor backend corriendo correctamente. Usa /api/ para los endpoints.');
+});
 
 // Report Endpoint
 app.get('/api/reports', async (req, res) => {
